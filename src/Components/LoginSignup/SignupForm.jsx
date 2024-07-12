@@ -1,17 +1,17 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-// import './LoginSignup.css';
+import './LoginSignup.css';
 
 const SignupForm = () => {
   const initialValues = {
-    name: '',
+    username: '',
     email: '',
     password: '',
   };
 
   const validationSchema = Yup.object({
-    username: Yup.string().required('username Required'),
+    username: Yup.string().required('Username Required'),
     email: Yup.string().email('Invalid email format').required('Fill in your email'),
     password: Yup.string().min(6, 'Password must be at least 6 characters').required('Fill in your password'),
   });
