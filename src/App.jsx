@@ -4,8 +4,6 @@ import Background from "./Components/Background/Background";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
-import LoginSignupPage from "./Components/LoginSignup/LoginSignupPage";
-// import './LoginSignup/LoginSignup.css'
 
 const App = () => {
   let heroData = [
@@ -38,7 +36,6 @@ const App = () => {
           setHeroCount={setHeroCount}
           playStatus={playStatus}
         />
-        <LoginSignupPage />
       </div>
     </>
   );

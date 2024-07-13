@@ -11,7 +11,7 @@ const LoginSignupPage = () => {
     <div className="LoginSignup-page">
       <div className="LoginSignup-toggle-buttons">
         <button onClick={() => setIsSigningUp(true)}>Sign Up</button>
-        <button onClick={() => setIsLogingIn(false)}>Log In</button>
+        <button onClick={() => setIsSigningUp(false)}>Log In</button>
       </div>
       {isSigningUp ? <SignupForm /> : <LoginForm />}
     </div>
